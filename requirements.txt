@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+rembg
+onnxruntime
+pillow
+numpy
+aiofiles
+jinja2
