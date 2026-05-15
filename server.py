@@ -54,17 +54,5 @@ async def not_found_handler(request: Request, exc):
     return templates.TemplateResponse("404.html", {"request": request}, status_code=404)
 
 
-if __name__ == '__main__':
-    import uvicorn
-    import os
-
-    port = int(os.environ.get("PORT", 8000))  # Render usa PORT automáticamente
-    
-    uvicorn.run(
-        app,
-        host="0.0.0.0",     # Render requiere esto
-        port=port
-    )
-
 
     
